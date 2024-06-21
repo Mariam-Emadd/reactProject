@@ -2,7 +2,7 @@ import "./App.css";
 // import MySignUp from "./website/Auth/MySignup";
 import Home from "./pages/Home";
 // import MyLogin from "./website/Auth/MyLogin";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import "./Components/Dashboard.css";
 import Users from "./pages/Users";
@@ -18,6 +18,7 @@ import { User } from "./website/context/context";
 import PrivateRoute from "./website/PrivateRoute";
 import HelpAchild from "./pages/HelpAchild";
 import ResetPass from "./website/Auth/ResetPass";
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
    const { setAuth } = useContext(User);
@@ -34,7 +35,7 @@ function App() {
    }, [setAuth]);
   return (
     <HashRouter>
-      <Routes>
+      <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Form />} />
         <Route path="/reset" element={<ResetPass />} />
@@ -54,7 +55,7 @@ function App() {
         >
           <Route path="users" element={<Users />} />
         </Route>
-      </Routes>
+      </Switch>
     </HashRouter>
   );
 }
