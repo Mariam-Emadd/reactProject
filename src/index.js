@@ -12,9 +12,9 @@ import { HashRouter } from 'react-router-dom';
 // Render the App component into the root element
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <UserProvider>
     <App />
-    </HashRouter>
+    </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
