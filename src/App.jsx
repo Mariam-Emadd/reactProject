@@ -33,7 +33,7 @@ function App() {
      }
    }, [setAuth]);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Form />} />
@@ -55,7 +55,7 @@ function App() {
           <Route path="users" element={<Users />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
