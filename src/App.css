@@ -1,0 +1,54 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+ }  
+ /* Example: Normalize.css inclusion */
+ @import 'normalize.css';
+body{
+    background-color: #062C60 !important;
+   /* height: 300vh; */
+
+   
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(225, 221, 213);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #062b60;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgb(167, 162, 152);
+    /* creates padding around scroll thumb */
+}
+.login a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.sign-up a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    
+
+
+
+    
+
+
+
